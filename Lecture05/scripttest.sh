@@ -12,6 +12,7 @@ do
 	  else
 	    count=$((count+1))
 	    echo -e "${count} \t ${name} \t ${city} \t ${country}"
+	    echo -e "${name}" >> ${country}
 	fi	
 done 
 echo "$count"
