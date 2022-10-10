@@ -12,7 +12,7 @@ do
 	  else
 	    count=$((count+1))
 	    echo -e "${count} \t ${name} \t ${city} \t ${country}"
-	    echo -e "${name}" >> ${country}
+	    echo -e "${name} \t ${email} \t ${city} \t ${birthday_day} \t ${birthday_month} \t ${birthday_year}" >> ${country}.tsvout
 	fi	
 done 
 echo "$count"
